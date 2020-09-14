@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu_dien</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button type="button" onclick="timkiem()">tim</button>
+<script>
+    let array1 = ["house","car","cat","dog","phone"];
+    let array2 = ["nha","xe","meo","cho","dien thoai"];
+    function timkiem(){
+        let a = document.getElementById("nhap").value;
+        let result=false;
+        for(let i = 0;i < array1.length;i++){
+            if(a == array1[i]){
+                alert(array2[i]);
+                result = true
+                break;
+            }
+        }
+        if (result == false)
+            alert('Khong tim thay');
+    }
+
+</script>
+</body>
+</html>
